@@ -3,9 +3,9 @@ import { RevealOnScroll } from "../RevealOnScroll";
 export const LatestArticles = () => {
   const articles = [
     {
-      title: "Understanding Ethical Hacking",
-      description: "A deep dive into ethical hacking and its importance in cybersecurity.",
-      url: "https://medium.com/your-article-1",
+      title: "Kevin Mitnick: From Most Wanted Hacker to Cybersecurity Icon",
+      description: "Once the FBI’s most wanted hacker, Kevin Mitnick used social engineering to outsmart corporations. After his arrest, he transformed into a top cybersecurity expert, helping businesses stay safe from hackers like his former self.",
+      url: "https://medium.com/@muzamil29876/kevin-mitnick-from-infamous-hacker-to-cybersecurity-pioneer-0da50342d274",
     },
     {
       title: "How to Get Started with Bug Bounties",
