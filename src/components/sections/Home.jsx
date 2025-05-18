@@ -8,16 +8,18 @@ export const Home = () => {
         id="home"
         className="min-h-screen flex items-center justify-center relative pt-20 overflow-hidden"
       >
+        {/* Background image */}
+        <div
+          className="absolute inset-0 bg-center bg-no-repeat bg-cover opacity-60 pointer-events-none z-0"
+          style={{ backgroundImage: 'url("/bgimage.png")' }}
+        />
+
+        {/* Optional dark overlay for better text contrast */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-black/50 z-0" />
+
+        {/* Main content */}
         <RevealOnScroll>
           <div className="text-center z-10 px-4 relative">
-
-            {/* Larger, more visible background image */}
-            <div
-              className="absolute inset-0 bg-center bg-no-repeat bg-contain md:bg-cover lg:bg-contain opacity-40 md:opacity-50 xl:opacity-60 pointer-events-none transition-all duration-500"
-              style={{ backgroundImage: 'url("bgimage.png")' }}
-            />
-
-            {/* Main content */}
             <h1 className="relative text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-tight">
               Hi, I'm Muzamil
             </h1>
