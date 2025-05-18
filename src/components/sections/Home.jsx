@@ -11,7 +11,7 @@ export const Home = () => {
         {/* Background image */}
         <div
           className="absolute inset-0 bg-center bg-no-repeat bg-cover opacity-60 pointer-events-none z-0"
-          style={{ backgroundImage: 'url("/bgimage.png")' }}
+          style={{ backgroundImage: 'url("/bgimage2.jpg")' }}
         />
 
         {/* Optional dark overlay for better text contrast */}
