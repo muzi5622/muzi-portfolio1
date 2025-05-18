@@ -6,9 +6,21 @@ export const About = () => {
   const AIVideoEditing = ["RunwayML", "Pika Labs", "CapCut", "Canva"];
 
   return (
-    <section id="about" className="min-h-screen flex items-center justify-center py-20">
+    <section
+      id="about"
+      className="min-h-screen flex items-center justify-center py-20 relative overflow-hidden"
+    >
+      {/* Background image */}
+      <div
+        className="absolute inset-0 bg-center bg-no-repeat bg-cover opacity-60 pointer-events-none z-0"
+        style={{ backgroundImage: 'url("/bgimage1.jpg")' }}
+      />
+
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-black/50 z-0" />
+
       <RevealOnScroll>
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-4xl mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             About Me
           </h2>
