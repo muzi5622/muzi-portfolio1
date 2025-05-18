@@ -1,6 +1,6 @@
 import { RevealOnScroll } from "../RevealOnScroll"; 
 import { LatestArticles } from "../sections/LatestArticles";
-import bgImage from "bgimage.png"; // Your transparent PNG image
+const bgImage = "/bgimage.png"; // Your transparent PNG image
 
 export const Home = () => {
   return (
