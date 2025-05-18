@@ -6,26 +6,15 @@ export const About = () => {
   const AIVideoEditing = ["RunwayML", "Pika Labs", "CapCut", "Canva"];
 
   return (
-    <section
-      id="about"
-      className="min-h-screen flex items-center justify-center py-20 relative overflow-hidden"
-    >
-      {/* Background image */}
-      <div
-        className="absolute inset-0 bg-center bg-no-repeat bg-cover opacity-60 pointer-events-none z-0"
-        style={{ backgroundImage: 'url("/bgimage1.jpg")' }}
-      />
-
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-black/50 z-0" />
-
+    <section id="about" className="min-h-screen flex items-center justify-center py-20">
       <RevealOnScroll>
-        <div className="max-w-4xl mx-auto px-4 relative z-10">
+        <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             About Me
           </h2>
 
-          <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
+          {/* Added bg-black/70 for opacity here */}
+          <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all bg-black/70">
             <p className="text-gray-300 mb-6">
               Passionate cybersecurity enthusiast with expertise in ethical hacking, automation, and networking. Also skilled in AI-powered video editing and content creation.
             </p>
