@@ -4,17 +4,20 @@ import { LatestArticles } from "../sections/LatestArticles";
 export const Home = () => {
   return (
     <>
-      <section id="home" className="min-h-screen flex items-center justify-center relative pt-20">
+      <section
+        id="home"
+        className="min-h-screen flex items-center justify-center relative pt-20 overflow-hidden"
+      >
         <RevealOnScroll>
           <div className="text-center z-10 px-4 relative">
-            
-            {/* Background image behind the name */}
-            <div 
-              className="absolute inset-0 bg-center bg-no-repeat bg-contain opacity-20 pointer-events-none"
-              style={{ backgroundImage: 'url("/bgimage.png")' }}
+
+            {/* Larger, more visible background image */}
+            <div
+              className="absolute inset-0 bg-center bg-no-repeat bg-contain md:bg-cover lg:bg-contain opacity-40 md:opacity-50 xl:opacity-60 pointer-events-none transition-all duration-500"
+              style={{ backgroundImage: 'url("/37d25b96-2ae7-49a9-a9aa-f7e9a71f2ec1.png")' }}
             />
 
-            {/* Text content */}
+            {/* Main content */}
             <h1 className="relative text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-tight">
               Hi, I'm Muzamil
             </h1>
