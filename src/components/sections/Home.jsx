@@ -14,7 +14,7 @@ export const Home = () => {
             {/* Larger, more visible background image */}
             <div
               className="absolute inset-0 bg-center bg-no-repeat bg-contain md:bg-cover lg:bg-contain opacity-40 md:opacity-50 xl:opacity-60 pointer-events-none transition-all duration-500"
-              style={{ backgroundImage: 'url("/37d25b96-2ae7-49a9-a9aa-f7e9a71f2ec1.png")' }}
+              style={{ backgroundImage: 'url("bgimage.png")' }}
             />
 
             {/* Main content */}
