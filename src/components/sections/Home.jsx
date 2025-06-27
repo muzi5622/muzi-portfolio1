@@ -6,29 +6,23 @@ export const Home = () => {
     <>
       <section
         id="home"
-        className="min-h-screen flex items-center justify-center relative pt-20 overflow-hidden"
+        className="min-h-screen flex items-center justify-center relative pt-20 overflow-hidden bg-black"
       >
-        {/* Background image */}
-        <div
-          className="absolute inset-0 bg-center bg-no-repeat bg-cover opacity-60 pointer-events-none z-0"
-          style={{ backgroundImage: 'url("/bgimage2.jpg")' }}
-        />
-
-        {/* Optional dark overlay for better text contrast */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-black/50 z-0" />
+        {/* Optional dark overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/90 to-black/60 z-0" />
 
         {/* Main content */}
         <RevealOnScroll>
           <div className="text-center z-10 px-4 relative">
-            <h1 className="relative text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-tight">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-tight">
               Hi, I'm Muzamil
             </h1>
 
-            <p className="relative text-gray-400 text-lg mb-8 max-w-lg mx-auto">
+            <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
               I'm a cybersecurity enthusiast passionate about ethical hacking and automation. My goal is to develop secure and efficient solutions while exploring the ever-evolving world of cybersecurity.
             </p>
 
-            <div className="relative flex justify-center space-x-4 mb-10">
+            <div className="flex justify-center space-x-4 mb-10">
               <a
                 href="#projects"
                 className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
@@ -44,14 +38,21 @@ export const Home = () => {
               </a>
             </div>
 
-            {/* TryHackMe Badge Menu */}
-            <div className="relative max-w-xl mx-auto bg-white/5 border border-white/10 rounded-xl p-4 shadow-lg backdrop-blur-md">
+            {/* TryHackMe Badge Centered */}
+            <div className="mx-auto w-full max-w-lg bg-white/5 border border-white/10 rounded-xl p-4 shadow-lg backdrop-blur-md">
               <h2 className="text-xl font-semibold text-blue-400 mb-3">My TryHackMe Progress</h2>
-              <iframe
-                src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3516652"
-                style={{ border: "none", width: "100%", height: "250px" }}
-                title="TryHackMe Badge"
-              ></iframe>
+              <div className="w-full flex justify-center">
+                <iframe
+                  src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3516652"
+                  title="TryHackMe Badge"
+                  style={{
+                    border: "none",
+                    width: "100%",
+                    maxWidth: "100%",
+                    height: "250px",
+                  }}
+                />
+              </div>
             </div>
           </div>
         </RevealOnScroll>
