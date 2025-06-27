@@ -38,22 +38,23 @@ export const Home = () => {
               </a>
             </div>
 
-            {/* TryHackMe Badge Centered without Scrollbar */}
-            <div className="mx-auto w-full max-w-lg bg-white/5 border border-white/10 rounded-xl p-4 shadow-lg backdrop-blur-md">
+            {/* TryHackMe Badge - Fully Centered, No Scrollbar */}
+            <div className="mx-auto w-full max-w-lg bg-white/5 border border-white/10 rounded-xl p-4 shadow-lg backdrop-blur-md overflow-hidden">
               <h2 className="text-xl font-semibold text-blue-400 mb-3 text-center">
                 My TryHackMe Progress
               </h2>
-              <div className="w-full flex justify-center items-center overflow-hidden">
+              <div className="inline-flex justify-center items-center w-full overflow-hidden">
                 <iframe
                   src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3516652"
                   title="TryHackMe Badge"
-                  className="rounded-lg block"
+                  className="rounded-lg"
                   style={{
                     border: "none",
-                    width: "300px",
+                    width: "100%",
+                    maxWidth: "320px",
                     height: "120px",
-                    margin: "0 auto",
                     display: "block",
+                    overflow: "hidden",
                   }}
                 />
               </div>
