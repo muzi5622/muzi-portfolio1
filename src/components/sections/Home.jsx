@@ -45,7 +45,7 @@ export const Home = () => {
               </h2>
               <div className="flex justify-center items-center w-full">
                 <img
-                  src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3516652"
+                  src="https://tryhackme-badges.s3.amazonaws.com/muzi56.png"
                   alt="TryHackMe Badge"
                   style={{
                     width: "320px",
