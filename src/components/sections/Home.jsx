@@ -28,7 +28,7 @@ export const Home = () => {
               I'm a cybersecurity enthusiast passionate about ethical hacking and automation. My goal is to develop secure and efficient solutions while exploring the ever-evolving world of cybersecurity.
             </p>
 
-            <div className="relative flex justify-center space-x-4">
+            <div className="relative flex justify-center space-x-4 mb-10">
               <a
                 href="#projects"
                 className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
@@ -42,6 +42,16 @@ export const Home = () => {
               >
                 Contact Me
               </a>
+            </div>
+
+            {/* TryHackMe Badge Menu */}
+            <div className="relative max-w-xl mx-auto bg-white/5 border border-white/10 rounded-xl p-4 shadow-lg backdrop-blur-md">
+              <h2 className="text-xl font-semibold text-blue-400 mb-3">My TryHackMe Progress</h2>
+              <iframe
+                src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3516652"
+                style={{ border: "none", width: "100%", height: "250px" }}
+                title="TryHackMe Badge"
+              ></iframe>
             </div>
           </div>
         </RevealOnScroll>
