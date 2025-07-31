@@ -11,14 +11,15 @@
     "predeploy": "npm run build"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.2.0",
     "@tailwindcss/vite": "^4.0.9",
+    "@vercel/speed-insights": "^1.2.0",
     "emailjs-com": "^3.2.0",
     "git": "^0.1.5",
     "lucide-react": "^0.476.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.2.0",
-    "@emailjs/browser": "^3.2.0",
     "tailwindcss": "^4.0.9"
   },
   "devDependencies": {
