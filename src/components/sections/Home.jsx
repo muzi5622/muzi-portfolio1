@@ -38,7 +38,7 @@ export const Home = () => {
               </a>
             </div>
 
-            {/* TryHackMe Badge - Using Image Approach */}
+            {/* TryHackMe Badge - Using Image Approach   */}
             <div className="mx-auto w-full max-w-lg bg-white/5 border border-white/10 rounded-xl p-4 shadow-lg backdrop-blur-md overflow-hidden">
               <h2 className="text-xl font-semibold text-blue-400 mb-3 text-center">
                 My TryHackMe Progress
