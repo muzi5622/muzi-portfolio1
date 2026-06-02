@@ -43,7 +43,7 @@ export const Projects = () => {
                   }`}>
                     {repo.name}
                   </h3>
-                  {repo.featured && <span className="inline-block text-xs text-orange-300 bg-orange-500/20 px-3 py-1 rounded mt-2 font-semibold">⭐ Featured - RQF Level 5 ECAM</span>}
+                  {repo.featured && <span className="inline-block text-xs text-orange-300 bg-orange-500/20 px-3 py-1 rounded mt-2 font-semibold">⭐ Featured - RQF Level 6 Exam</span>}
                   {!repo.featured && <span className="inline-block text-xs text-gray-500 bg-white/5 px-2 py-1 rounded mt-2">
                     {repo.language}
                   </span>}
