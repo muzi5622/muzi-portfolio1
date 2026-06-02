@@ -13,45 +13,51 @@ export const Home = () => {
 
         {/* Main content */}
         <RevealOnScroll>
-          <div className="text-center z-10 px-4 relative">
+          <div className="text-center z-10 px-4 relative max-w-3xl">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-tight">
-              Hi, I'm Muzamil
+              Hi, I'm <span style={{color:'#1E90FF'}}>Muzammal</span>
             </h1>
 
-            <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
-              I'm a cybersecurity enthusiast passionate about ethical hacking and automation. My goal is to develop secure and efficient solutions while exploring the ever-evolving world of cybersecurity.
+            <p className="text-gray-300 text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
+              AIOps Specialist | Bug Bounty Hunter | Cybersecurity & Cloud Infrastructure Expert | AI Automation Enthusiast
             </p>
 
-            <div className="flex justify-center space-x-4 mb-10">
+            <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
+              Specializing in secure infrastructure automation, ethical hacking, and intelligent operational solutions. Combining DevOps, SysOps, Machine Learning, and Security to build resilient systems.
+            </p>
+
+            <div className="flex justify-center gap-4 mb-12 flex-wrap">
               <a
                 href="#projects"
-                className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
+                className="bg-gradient-to-r from-blue-600 to-blue-500 text-white py-3 px-8 rounded-lg font-semibold transition hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] hover:-translate-y-0.5"
               >
                 View Projects
               </a>
 
               <a
                 href="#contact"
-                className="border border-blue-500/50 text-blue-500 py-3 px-6 rounded font-medium transition hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:bg-blue-500/10"
+                className="border border-blue-500/50 text-blue-300 py-3 px-8 rounded-lg font-semibold transition hover:bg-blue-500/10 hover:border-blue-400 hover:-translate-y-0.5"
               >
                 Contact Me
               </a>
             </div>
 
-            {/* TryHackMe Badge - Using Image Approach   */}
-            <div className="mx-auto w-full max-w-lg bg-white/5 border border-white/10 rounded-xl p-4 shadow-lg backdrop-blur-md overflow-hidden">
-              <h2 className="text-xl font-semibold text-blue-400 mb-3 text-center">
-                My TryHackMe Progress
-              </h2>
-              <div className="flex justify-center items-center w-full">
-                <img
-                  src="https://tryhackme-badges.s3.amazonaws.com/muzi56.png"
-                  alt="TryHackMe Badge latetst"
-                  style={{
-                    width: "320px",
-                    height: "120px",
-                    objectFit: "contain",
-                  }}
+            {/* RQF Level 6 Presentation Video */}
+            <div className="mx-auto w-full max-w-2xl bg-gradient-to-r from-red-500/10 to-orange-500/10 border border-red-500/20 rounded-xl p-6 backdrop-blur-md overflow-hidden hover:border-red-500/50 transition-all duration-300 mt-8">
+              <h3 className="text-lg font-semibold text-orange-300 mb-4 text-center">
+                🎬 EduQual RQF Level 6 (AIOps Diploma) Exam Presentation & Demo
+              </h3>
+              <p className="text-gray-400 text-sm mb-4 text-center">
+                Watch my complete AIOps diploma exam presentation and live demo of CTI Platform Project from Alnafi College
+              </p>
+              <div className="relative w-full bg-black/50 rounded-lg overflow-hidden" style={{ paddingBottom: '56.25%' }}>
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full"
+                  src="https://www.youtube.com/embed/rTVpRuFiXmM"
+                  title="RQF Level 6 AIOps Diploma Presentation"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
                 />
               </div>
             </div>

@@ -29,41 +29,50 @@ export const LatestArticles = () => {
   ];
 
   return (
-    <section id="articles" className="min-h-screen flex items-center justify-center py-20">
+    <section id="articles" className="min-h-screen flex items-center justify-center py-20 bg-gradient-to-b from-black via-blue-950/10 to-black">
       <RevealOnScroll>
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-            Latest Articles
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div className="mb-12 text-center">
+            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+              Latest Articles
+            </h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              Technical insights on cybersecurity, DevOps, and AI automation from hands-on experience.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
             {articles.map((article, index) => (
-              <div
+              <a
                 key={index}
-                className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
+                href={article.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-6 rounded-xl border border-white/10 hover:border-blue-500/50 hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(59,130,246,0.15)] transition-all duration-300 group bg-black/50 backdrop-blur-sm"
               >
-                <h3 className="text-xl font-bold mb-2">{article.title}</h3>
-                <p className="text-gray-400 mb-4">{article.description}</p>
-                <div className="flex justify-between items-center">
-                  <a
-                    href={article.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-                  >
-                    Read More →
-                  </a>
+                <h3 className="text-lg font-bold mb-3 group-hover:text-blue-400 transition-colors line-clamp-2">
+                  {article.title}
+                </h3>
+                <p className="text-gray-400 text-sm mb-4 line-clamp-3">
+                  {article.description}
+                </p>
+                <div className="flex items-center text-blue-400 text-sm group-hover:gap-2 transition-all">
+                  <span>Read Article</span>
+                  <span className="group-hover:translate-x-1 transition-transform">→</span>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
 
-          {/* View All Blogs Button */}
-          <div className="text-center">
+          {/* View All Blog Button */}
+          <div className="text-center pt-8 border-t border-white/10">
             <a
               href="https://www.0xmuzamil.dev/"
-              className="inline-block px-6 py-3 rounded-full bg-blue-600 text-white hover:bg-blue-500 transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all duration-300"
             >
-              View All Blogs →
+              Explore Full Blog
             </a>
           </div>
         </div>
