@@ -8,13 +8,17 @@ export const RevealOnScroll = ({ children }) => {
       ([entry]) => {
         if (entry.isIntersecting) {
           ref.current?.classList.add("visible");
+          // Keep the visible class permanently once triggered
+          observer.unobserve(ref.current);
         }
       },
-      { threshold: 0.1, rootMargin: "0px 0px 0px 0px" }
+      { 
+        threshold: 0.05,
+        rootMargin: "50px 0px 50px 0px"
+      }
     );
 
     if (ref.current) {
-      // Check if element is already in view on mount
       observer.observe(ref.current);
     }
 

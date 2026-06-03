@@ -50,21 +50,28 @@ body {
   transform: translateY(0) !important;
 }
 
-/* Ensure content is visible if reveal doesn't trigger */
+/* Mobile optimized animations */
 @media (max-width: 768px) {
   .reveal {
-    animation: revealMobile 0.7s ease forwards;
-    animation-delay: 0.1s;
+    animation: revealMobile 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    animation-delay: 0.4s;
   }
   
   @keyframes revealMobile {
-    from {
+    0% {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(30px);
     }
-    to {
+    100% {
       opacity: 1;
       transform: translateY(0);
     }
+  }
+}
+
+/* Tablet optimization */
+@media (max-width: 1024px) {
+  .reveal {
+    transition: opacity 0.9s ease, transform 0.9s ease;
   }
 }
