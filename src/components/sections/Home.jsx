@@ -1,5 +1,4 @@
 import { RevealOnScroll } from "../RevealOnScroll";
-import { LatestArticles } from "../sections/LatestArticles";
 
 export const Home = () => {
   return (
@@ -15,15 +14,15 @@ export const Home = () => {
         <RevealOnScroll>
           <div className="text-center z-10 px-4 relative max-w-3xl">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-tight">
-              Hi, I'm <span style={{color:'#1E90FF'}}>Muzammal</span>
+              Hi, I&apos;m <span style={{color:'#1E90FF'}}>Muzammal</span>
             </h1>
 
             <p className="text-gray-300 text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
-              AIOps Specialist | Bug Bounty Hunter | Cybersecurity & Cloud Infrastructure Expert | AI Automation Enthusiast
+              Bug Bounty Hunter | Web Vulnerability Research | Ethical Hacking | AIOps + Cloud Security
             </p>
 
             <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
-              Specializing in secure infrastructure automation, ethical hacking, and intelligent operational solutions. Combining DevOps, SysOps, Machine Learning, and Security to build resilient systems.
+              Bug bounty hunting is my primary specialization: I find, validate, and responsibly report web vulnerabilities, backed by experience in cloud security, AIOps, and automation.
             </p>
 
             <div className="flex justify-center gap-4 mb-12 flex-wrap">

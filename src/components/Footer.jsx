@@ -1,4 +1,4 @@
-import { Linkedin, PenTool, Github, Globe, Mail } from "lucide-react"; // Import icons
+import { Linkedin, PenTool, Github, Mail } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -7,17 +7,7 @@ export const Footer = () => {
         <p className="text-gray-400 text-sm mb-4">🌐 Connect With Me</p>
         <div className="flex justify-center space-x-6 flex-wrap gap-4">
           <a
-            href="https://www.0xmuzamil.tech/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-400 transition-colors flex items-center gap-2"
-            title="Portfolio"
-          >
-            <Globe size={24} />
-            <span className="text-sm hidden md:inline">Portfolio</span>
-          </a>
-          <a
-            href="https://0xmuzamil.dev/"
+            href="https://0xmuzamil.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-orange-400 transition-colors flex items-center gap-2"
@@ -58,7 +48,7 @@ export const Footer = () => {
       </div>
       <div className="border-t border-white/10 pt-4">
         <p className="text-gray-500 text-xs">
-          © 2025 Muzammal. All rights reserved. | Building Secure & Intelligent Solutions
+          © {new Date().getFullYear()} Muzammal. All rights reserved. | Bug Bounty Hunter · Web Security · AIOps & Cloud Security
         </p>
       </div>
     </footer>

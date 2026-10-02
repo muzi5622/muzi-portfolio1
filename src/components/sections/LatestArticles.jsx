@@ -6,25 +6,25 @@ export const LatestArticles = () => {
       title: "Will AI Replace Humans in Pentesting?",
       description:
         "A deep dive into the role of artificial intelligence in penetration testing, examining the potential, limitations, and ethical implications of replacing humans with machines.",
-      url: "https://www.0xmuzamil.dev/posts/will-ai-replace-humans-in-pentesting",
+      url: "https://0xmuzamil.vercel.app/posts/will-ai-replace-humans-in-pentesting",
     },
     {
       title: "How to Get Started with Bug Bounties",
       description:
         "A beginner-friendly and practical guide to starting your journey in bug bounty hunting. Learn tools, tips, mindset, and how to find your first vulnerability.",
-      url: "https://www.0xmuzamil.dev/posts/how-to-get-started-in-bug-bounty",
+      url: "https://0xmuzamil.vercel.app/posts/how-to-get-started-in-bug-bounty",
     },
     {
       title: "Roadmap to Become an Ethical Hacker in 2025 – Step-by-Step Guide",
       description:
         "Want to become an ethical hacker in 2025 but don’t know where to start? This guide breaks down a clear, step-by-step roadmap for absolute beginners to start their journey toward a career in hacking and cybersecurity.",
-      url: "https://www.0xmuzamil.dev/posts/roadmap-to-become-ethical-hacker-in-2025",
+      url: "https://0xmuzamil.vercel.app/posts/roadmap-to-become-ethical-hacker-in-2025",
     },
     {
       title: "Understanding the Hacker Mindset – It’s Not Just Code",
       description:
         "To be a hacker, you don't just need tools—you need a mindset. This post explores the emotional, psychological, and mental shifts you need to succeed in ethical hacking and bug bounty.",
-      url: "https://www.0xmuzamil.dev/posts/understanding-the-hacker-mindset",
+      url: "https://0xmuzamil.vercel.app/posts/understanding-the-hacker-mindset",
     },
   ];
 
@@ -67,7 +67,7 @@ export const LatestArticles = () => {
           {/* View All Blog Button */}
           <div className="text-center pt-8 border-t border-white/10">
             <a
-              href="https://www.0xmuzamil.dev/"
+              href="https://0xmuzamil.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all duration-300"
