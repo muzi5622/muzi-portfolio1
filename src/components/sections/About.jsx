@@ -212,7 +212,7 @@ export const About = () => {
                       className="h-12 w-12 shrink-0 rounded bg-white object-contain p-1"
                     />
                     <div>
-                      <p className="font-semibold text-white">BS Cyber Security, Computer Science</p>
+                      <p className="font-semibold text-white">BS Cyber Security</p>
                       <p className="text-sm text-gray-400">Pak-Austria Fachhochschule: Institute of Applied Sciences and Technology</p>
                       <p className="text-xs text-gray-500 mt-1">Sep 2026 – Sep 2030</p>
                     </div>
